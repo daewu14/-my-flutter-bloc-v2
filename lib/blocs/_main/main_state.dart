@@ -4,6 +4,11 @@ abstract class MainState extends Equatable {
   const MainState();
 }
 
+class MainStateLoading extends MainState {
+  @override
+  List<Object> get props => [];
+}
+
 class MainInitial extends MainState {
   AppTheme theme = AppTheme();
   Locale locale = AppLocalizations.getCurrentLocale();

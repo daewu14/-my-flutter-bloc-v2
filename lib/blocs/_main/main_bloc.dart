@@ -15,13 +15,13 @@ class MainBloc extends Bloc<MainEvent, MainState> {
 
   @override
   Stream<MainState> mapEventToState(
-    MainEvent event,
-  ) async* {
+      MainEvent event,
+      ) async* {
 
     if (event is MainEventChangeTheme) {
       yield* _changeTheme();
     }
-    
+
     if (event is MainEventChangeLang) {
       yield* _changeLanguage(event.locale);
     }
@@ -29,12 +29,14 @@ class MainBloc extends Bloc<MainEvent, MainState> {
   }
 
   Stream<MainState> _changeTheme() async* {
+    yield MainStateLoading();
     AppTheme thmee = AppTheme();
     thmee.togleTheme();
     yield MsChangeTheme(thmee.currentTheme());
   }
 
   Stream<MainState> _changeLanguage(Locale locale) async* {
+    yield MainStateLoading();
     Locale newLocale = AppLocalizations.setLocale(locale);
     yield MsChangeLang(newLocale);
   }
