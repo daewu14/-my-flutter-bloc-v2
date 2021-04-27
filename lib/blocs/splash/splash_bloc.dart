@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:my_flutter_bloc_v2/repositories/x_exported_repository.dart';
+import '../../repositories/x_exported_repository.dart';
 
 part 'splash_event.dart';
 part 'splash_state.dart';

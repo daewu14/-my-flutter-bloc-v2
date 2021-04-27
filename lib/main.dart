@@ -1,5 +1,6 @@
 
 import 'package:animations/animations.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -60,8 +61,9 @@ class App extends StatelessWidget {
               locale: locale,
               localizationsDelegates: [
                 GlobalMaterialLocalizations.delegate,
-                GlobalCupertinoLocalizations.delegate,
                 GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+                DefaultCupertinoLocalizations.delegate,
                 AppLocalizations.delegate,
               ],
               supportedLocales: [

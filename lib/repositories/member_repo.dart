@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:my_flutter_bloc_v2/x_src/x_res.dart';
+import '../x_src/x_res.dart';
 
 import '_main_repository.dart';
 

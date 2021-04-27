@@ -13,7 +13,9 @@ class Pages {
   // ignore: missing_return
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch(settings.name){
+
       case RouterName.splash:
+        // var arg = settings.arguments as Obje;
         return MaterialPageRoute(
               builder: (_) => BlocProvider(
               create: (_) => SplashBloc()..add(Loading()),
