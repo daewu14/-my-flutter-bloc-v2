@@ -4,8 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
-import '../../x_src/app_localizations.dart';
-import '../../x_src/app_theme.dart';
+import '../../x_exported_res_util_widget.dart';
 
 part 'main_event.dart';
 part 'main_state.dart';
